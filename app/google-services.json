@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "925313808453",
+    "firebase_url": "https://taklit-gps-lokasyon.firebaseio.com",
+    "project_id": "taklit-gps-lokasyon",
+    "storage_bucket": "taklit-gps-lokasyon.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:925313808453:android:be300943ac5aeee32a4b2c",
+        "android_client_info": {
+          "package_name": "com.ase.taklitgpskonum"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "925313808453-479qspp9c4nq84dq9h56lfq2cltprgl7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAahZNhSYu8eJb_hfYyw8CsBvUKFJFLZ80"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "925313808453-479qspp9c4nq84dq9h56lfq2cltprgl7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
