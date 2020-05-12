@@ -30,4 +30,5 @@
     <string name="historico">Histórico</string>
     <string name="sem_registros">Sem registros</string>
     <string name="remover">Remover</string>
+    <string name="ok">Está bem</string>
 </resources>

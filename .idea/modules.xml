@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/FakeGpsLocation.iml" filepath="$PROJECT_DIR$/FakeGpsLocation.iml" group="FakeGpsLocation" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="FakeGpsLocation/app" />
+      <module fileurl="file://$PROJECT_DIR$/FakeLocation.iml" filepath="$PROJECT_DIR$/FakeLocation.iml" group="FakeLocation" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="FakeLocation/app" />
     </modules>
   </component>
 </project>

@@ -5,7 +5,7 @@
     <string name="title_activity_main">Fake Live Location</string>
     <!-- ADMOB -->
     <string name="admob_banner_main_id" translatable="false">ca-app-pub-7855026272321805/5407615755</string>
-
+    <string name="admob_interstitial_id" translatable="false">ca-app-pub-7855026272321805/5681993637</string>
     <string name="menu_start">Start Fake Live Location</string>
     <string name="menu_stop">Stop Fake Live Location</string>
     <string name="menu_search">Search Location</string>
@@ -28,7 +28,7 @@
     <string name="warning">Warning</string>
     <string name="alert_mocksetting_msg">You need the \"Allow mock locations\" option enabled to be able to use the app, click OK, or go to the settings in Settings> Developer> Allow mock locations, (the location of the configuration is not the same for all devices)</string>
     <string name="alert_mocksetting_and6_msg">You need to select this app on the \"Select mock location app\"  from Developer Options to use this app, click OK, or go to the settings in Settings> Developer> Select mock location app, and choose this aplication (always keep this option active, or the application will not work!)</string>
-    <string name="menu_sobre">%1$s, v%2$s\n\nCopyright © %03$d ase Technologies</string>
+    <string name="menu_sobre">%1$s, v%2$s\n\nCopyright © %03$d</string>
     <string name="about">About</string>
     <string name="historico">History</string>
     <string name="sem_registros">No records</string>

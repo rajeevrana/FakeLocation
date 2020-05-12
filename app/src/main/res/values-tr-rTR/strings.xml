@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Konum GPS Sahte Konum</string>
+    <string name="menu_about">Hakkında</string>
+    <string name="menu_search">Konum arayın</string>
+    <string name="menu_start">Taklit Canlı Konum Başlat</string>
+    <string name="menu_stop">Taklit Canlı Konumu Durdur</string>
+    <string name="title_activity_main">Taklit GPS Konumu</string>
+
+    <string name="alert_servico_rodando_title">Taklit GPS Konum</string>
+    <string name="alert_servico_rodando">Koordinatları düzenlemeden önce hizmeti durdurun!</string>
+    <string name="notification_service_run_title">Taklit Canlı Konum başladı…</string>
+    <string name="notification_service_run_text">Canlı konum kullanan herhangi bir uygulamayı başlatın</string>
+    <string name="toast_service_start">Taklit Canlı Konum başladı…</string>
+    <string name="toast_service_pause">Taklit Canlı Konum duraklatıldı…</string>
+    <string name="search">Arayın</string>
+    <string name="info_search_address">İstenilen adresi arayın</string>
+    <string name="cancel">İptal</string>
+    <string name="toast_inform_search_error">HATA: Arama alanına girin</string>
+
+    <string name="dialog_local_confirm_msg">Buraya bir işaret eklensin mi?</string>
+    <string name="dialog_local_confirm_title">Arama bulundu</string>
+    <string name="toast_address_notfound">Adres bulunamadı</string>
+    <string name="alert">Uyarı</string>
+    <string name="warning">Dikkat</string>
+    <string name="alert_mocksetting_msg">Uygulamayı kullanabilmek için sahte konumlar seçeneği etkin olmalı.  Ayarlar bölümünde Geliştirici seçenekleri içerisinde Sahte konum uygulamasını seçmelisiniz. (Yapılandırmanın konumu tüm cihazlar için aynı değildir.)</string>
+    <string name="alert_mocksetting_and6_msg">Bu uygulamayı kullanmak için Geliştirici seçeneklerden Sahte konum uygulaması bölümüne gidin ve uygulamayı seçin (Bunu özelliği her zaman açık tutmalısınız.) seçeneği etkin veya uygulama çalışmaz!)</string>
+    <string name="menu_sobre">%1$s, v%2$s  Copyright © %03$d ase Technologies</string>
+    <string name="about">Hakkında</string>
+    <string name="historico">Geçmiş</string>
+    <string name="sem_registros">Kayıt yok</string>
+    <string name="remover">Kaldır</string>
+    <string name="ok">Tamam</string>
+</resources>

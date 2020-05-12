@@ -12,8 +12,8 @@ import android.os.IBinder;
 import android.os.SystemClock;
 
 import android.os.Handler;
-import android.support.v4.app.NotificationCompat;
-import android.support.v4.app.TaskStackBuilder;
+import androidx.core.app.NotificationCompat;
+import androidx.core.app.TaskStackBuilder;
 
 import com.ase.taklitgpskonum.MainActivity;
 import com.ase.taklitgpskonum.R;
