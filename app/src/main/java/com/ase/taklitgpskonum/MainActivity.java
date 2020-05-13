@@ -30,6 +30,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cursoradapter.widget.CursorAdapter;
 
@@ -155,6 +156,7 @@ public class MainActivity extends AppCompatActivity implements GoogleMap.OnMapCl
 
         if (setUpMapIfNeeded()) {
             mMap.setMapType(GoogleMap.MAP_TYPE_NORMAL);
+
             mMap.setOnMapClickListener(this);
         }
 
@@ -162,11 +164,14 @@ public class MainActivity extends AppCompatActivity implements GoogleMap.OnMapCl
         latLng = new LatLng(
                 Double.longBitsToDouble(prefService.getLong(GeralConstantes.PREFS_SERVICE_LAT_TAG, 0)),
                 Double.longBitsToDouble(prefService.getLong(GeralConstantes.PREFS_SERVICE_LONG_TAG, 0))
+
         );
+
         int gPlayServiceStatus = GooglePlayServicesUtil.isGooglePlayServicesAvailable(getBaseContext());
 
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.M)
     @Override
     public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
@@ -525,24 +530,26 @@ public class MainActivity extends AppCompatActivity implements GoogleMap.OnMapCl
 
     @Override
     public void onMapReady(GoogleMap map) {
-        map.addMarker(new MarkerOptions()
-                .position(new LatLng(0, 0))
-                .title("Marker"));
-        int gPlayServiceStatus = GooglePlayServicesUtil.isGooglePlayServicesAvailable(getBaseContext());
+        mMap=map;
 
-//        if(gPlayServiceStatus== ConnectionResult.SUCCESS) {
-//            addMark(latLng);
-//        }
+        LatLng lat = new LatLng(0, 0);
+        map.addMarker(new MarkerOptions().position(new LatLng(0,  0)).title("Marker"));
+        CameraPosition position = new CameraPosition.Builder()
+                .target(lat)
+                .zoom(6)
+                .tilt(8f)
+                .build();
+        CameraUpdate update = CameraUpdateFactory.newCameraPosition(position);
+        mMap.animateCamera(update);
 
-        map.getUiSettings().setAllGesturesEnabled(true);
-        map.getUiSettings().setCompassEnabled(true);
-
-        map.setMapType(GoogleMap.MAP_TYPE_NORMAL);
-//        map.setMyLocationEnabled(true);
-        map.setTrafficEnabled(true);
-        map.setIndoorEnabled(true);
-//        map.setBuildingsEnabled(true);
-        map.getUiSettings().setZoomControlsEnabled(true);
+//        map.getUiSettings().setZoomControlsEnabled(true);
+//        map.getUiSettings().setCompassEnabled(true);
+//        map.getUiSettings().setMyLocationButtonEnabled(true);
+//        map.getUiSettings().setMapToolbarEnabled(true);
+//        map.getUiSettings().setZoomGesturesEnabled(true);
+//        map.getUiSettings().setScrollGesturesEnabled(true);
+//        map.getUiSettings().setTiltGesturesEnabled(true);
+//        map.getUiSettings().setRotateGesturesEnabled(true);
     }
 
 
