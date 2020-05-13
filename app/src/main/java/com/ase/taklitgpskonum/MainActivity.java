@@ -299,6 +299,7 @@ public class MainActivity extends AppCompatActivity implements GoogleMap.OnMapCl
 
                         List<Address> listSearch = searchLocation(latLng.latitude, latLng.longitude, 1);
                         if (listSearch != null && !listSearch.isEmpty()) {
+
                             addHistorico(listSearch);
                         }
 
@@ -487,7 +488,9 @@ public class MainActivity extends AppCompatActivity implements GoogleMap.OnMapCl
                             Intent intent = new Intent("com.android.settings.APPLICATION_DEVELOPMENT_SETTINGS");
                             startActivity(intent);
                         } else {
-                            Intent intent = new Intent(Settings.ACTION_APPLICATION_DEVELOPMENT_SETTINGS);
+
+                            Intent intent = new Intent(android.provider.Settings.ACTION_APPLICATION_DEVELOPMENT_SETTINGS);
+                            //Intent intent = new Intent(Settings.ACTION_APPLICATION_DEVELOPMENT_SETTINGS);
                             startActivity(intent);
                         }
 
@@ -533,7 +536,7 @@ public class MainActivity extends AppCompatActivity implements GoogleMap.OnMapCl
         mMap=map;
 
         LatLng lat = new LatLng(0, 0);
-        map.addMarker(new MarkerOptions().position(new LatLng(0,  0)).title("Marker"));
+        map.addMarker(new MarkerOptions().position(lat).title("Marker"));
         CameraPosition position = new CameraPosition.Builder()
                 .target(lat)
                 .zoom(6)
